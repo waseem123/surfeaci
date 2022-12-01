@@ -1,9 +1,17 @@
 from flask import Flask, url_for, render_template, request, redirect
 
+app = Flask(__name__)
 
 
-# Press the green button in the gutter to run the script.
+@app.route("/")
+def home():
+    return render_template("login.html")
+
+
+@app.route("/new-application")
+def new_application():
+    return render_template("new-application.html")
+
+
 if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    app.run(debug=True)

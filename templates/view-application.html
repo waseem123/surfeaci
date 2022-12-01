@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base href="./../">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="CoreUI - Open Source Bootstrap Admin Template">
+    <meta name="author" content="Łukasz Holeczek">
+    <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
+    <title>CoreUI Free Bootstrap Admin Template</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="static/assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="static/assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="static/assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="static/assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="static/assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="static/assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="static/assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="static/assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="static/assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="static/assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="static/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="static/assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="static/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="static/assets/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="static/assets/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Vendors styles-->
+    <link rel="stylesheet" href="static/vendors/simplebar/css/simplebar.css">
+    <link rel="stylesheet" href="static/css/vendors/simplebar.css">
+    <!-- Main styles for this application-->
+    <link href="static/css/style.css" rel="stylesheet">
+    <!-- We use those styles to show code examples, you should remove them in your application.-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism.css">
+    <link href="static/css/examples.css" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics-->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-118965717-3"></script>
+    <script>
+          window.dataLayer = window.dataLayer || [];
+
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag('js', new Date());
+          // Shared ID
+          gtag('config', 'UA-118965717-3');
+          // Bootstrap ID
+          gtag('config', 'UA-118965717-5');
+
+    </script>
+    <link rel="canonical" href="https://coreui.io/docs/forms/layout/">
+</head>
+<body>
+<div class="sidebar sidebar-dark sidebar-fixed" id="sidebar">
+    <div class="sidebar-brand d-none d-md-flex">
+        <svg class="sidebar-brand-full" width="118" height="46" alt="CoreUI Logo">
+            <use xlink:href="static/assets/brand/coreui.svg#full"></use>
+        </svg>
+        <svg class="sidebar-brand-narrow" width="46" height="46" alt="CoreUI Logo">
+            <use xlink:href="static/assets/brand/coreui.svg#signet"></use>
+        </svg>
+    </div>
+    <ul class="sidebar-nav" data-coreui="navigation" data-simplebar="">
+        <li class="nav-item"><a class="nav-link" href="/">
+            <svg class="nav-icon">
+                <use xlink:href="static/vendors/@coreui/icons/svg/free.svg#cil-speedometer"></use>
+            </svg>
+            Dashboard</a></li>
+        <li class="nav-title">Masters</li>
+        <li class="nav-item"><a class="nav-link" href="new-application">
+            <svg class="nav-icon">
+                <use xlink:href="static/vendors/@coreui/icons/svg/free.svg#cil-pencil"></use>
+            </svg>
+            New Application</a></li>
+        <li class="nav-item"><a class="nav-link" href="view-applications">
+            <svg class="nav-icon">
+                <use xlink:href="static/vendors/@coreui/icons/svg/free.svg#cil-drop"></use>
+            </svg>
+            View Applications</a></li>
+        <li class="nav-title">Components</li>
+        <li class="nav-group"><a class="nav-link nav-group-toggle" href="#">
+            <svg class="nav-icon">
+                <use xlink:href="static/vendors/@coreui/icons/svg/free.svg#cil-puzzle"></use>
+            </svg>
+            History</a>
+            <ul class="nav-group-items">
+                <li class="nav-item"><a class="nav-link" href="exams"><span class="nav-icon"></span> Exams</a></li>
+                <li class="nav-item"><a class="nav-link" href="new-allotment"><span class="nav-icon"></span> New
+                    Allotment</a></li>
+                <li class="nav-item"><a class="nav-link" href="exam-allotments"><span class="nav-icon"></span> Exam
+                    Allotments</a></li>
+                <!--            <li class="nav-item"><a class="nav-link" href="base/cards.html"><span class="nav-icon"></span> Cards</a></li>-->
+            </ul>
+        </li>
+        <li class="nav-group"><a class="nav-link nav-group-toggle" href="#">
+            <svg class="nav-icon">
+                <use xlink:href="static/vendors/@coreui/icons/svg/free.svg#cil-bell"></use>
+            </svg>
+            Notifications</a>
+            <ul class="nav-group-items">
+                <li class="nav-item"><a class="nav-link" href="notifications/alerts.html"><span class="nav-icon"></span>
+                    Alerts</a></li>
+                <li class="nav-item"><a class="nav-link" href="notifications/badge.html"><span class="nav-icon"></span>
+                    Badge</a></li>
+                <li class="nav-item"><a class="nav-link" href="notifications/modals.html"><span class="nav-icon"></span>
+                    Modals</a></li>
+                <li class="nav-item"><a class="nav-link" href="notifications/toasts.html"><span class="nav-icon"></span>
+                    Toasts</a></li>
+            </ul>
+        </li>
+        <li class="nav-divider"></li>
+        <li class="nav-title">Extras</li>
+
+        <li class="nav-item mt-auto"><a class="nav-link" href="https://coreui.io/docs/templates/installation/"
+                                        target="_blank">
+            <svg class="nav-icon">
+                <use xlink:href="static/vendors/@coreui/icons/svg/free.svg#cil-description"></use>
+            </svg>
+            Docs</a></li>
+    </ul>
+    <button class="sidebar-toggler" type="button" data-coreui-toggle="unfoldable"></button>
+</div>
+<div class="wrapper d-flex flex-column min-vh-100 bg-light">
+    <header class="header header-sticky mb-4">
+        <div class="container-fluid">
+            <button class="header-toggler px-md-0 me-md-3" type="button"
+                    onclick="coreui.Sidebar.getInstance(document.querySelector('#sidebar')).toggle()">
+                <svg class="icon icon-lg">
+                    <use xlink:href="static/vendors/@coreui/icons/svg/free.svg#cil-menu"></use>
+                </svg>
+            </button>
+            <a class="header-brand d-md-none" href="#">
+                <svg width="118" height="46" alt="CoreUI Logo">
+                    <use xlink:href="static/assets/brand/coreui.svg#full"></use>
+                </svg>
+            </a>
+            <ul class="header-nav d-none d-md-flex">
+                <li class="nav-item"><a class="nav-link" href="#">Dashboard</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Users</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Settings</a></li>
+            </ul>
+            <ul class="header-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#">
+                    <svg class="icon icon-lg">
+                        <use xlink:href="static/vendors/@coreui/icons/svg/free.svg#cil-bell"></use>
+                    </svg>
+                </a></li>
+                <li class="nav-item"><a class="nav-link" href="#">
+                    <svg class="icon icon-lg">
+                        <use xlink:href="static/vendors/@coreui/icons/svg/free.svg#cil-list-rich"></use>
+                    </svg>
+                </a></li>
+                <li class="nav-item"><a class="nav-link" href="#">
+                    <svg class="icon icon-lg">
+                        <use xlink:href="static/vendors/@coreui/icons/svg/free.svg#cil-envelope-open"></use>
+                    </svg>
+                </a></li>
+            </ul>
+            <ul class="header-nav ms-3">
+                <li class="nav-item dropdown"><a class="nav-link py-0" data-coreui-toggle="dropdown" href="#"
+                                                 role="button" aria-haspopup="true" aria-expanded="false">
+                    <div class="avatar avatar-md"><img class="avatar-img" src="static/assets/img/avatars/8.jpg"
+                                                       alt="user@email.com"></div>
+                </a>
+                    <div class="dropdown-menu dropdown-menu-end pt-0">
+                        <div class="dropdown-header bg-light py-2">
+                            <div class="fw-semibold">Account</div>
+                        </div>
+                        <a class="dropdown-item" href="#">
+                            <svg class="icon me-2">
+                                <use xlink:href="static/vendors/@coreui/icons/svg/free.svg#cil-bell"></use>
+                            </svg>
+                            Updates<span class="badge badge-sm bg-info ms-2">42</span></a><a class="dropdown-item"
+                                                                                             href="#">
+                        <svg class="icon me-2">
+                            <use xlink:href="static/vendors/@coreui/icons/svg/free.svg#cil-envelope-open"></use>
+                        </svg>
+                        Messages<span class="badge badge-sm bg-success ms-2">42</span></a><a class="dropdown-item"
+                                                                                             href="#">
+                        <svg class="icon me-2">
+                            <use xlink:href="static/vendors/@coreui/icons/svg/free.svg#cil-task"></use>
+                        </svg>
+                        Tasks<span class="badge badge-sm bg-danger ms-2">42</span></a><a class="dropdown-item"
+                                                                                         href="#">
+                        <svg class="icon me-2">
+                            <use xlink:href="static/vendors/@coreui/icons/svg/free.svg#cil-comment-square"></use>
+                        </svg>
+                        Comments<span class="badge badge-sm bg-warning ms-2">42</span></a>
+                        <div class="dropdown-header bg-light py-2">
+                            <div class="fw-semibold">Settings</div>
+                        </div>
+                        <a class="dropdown-item" href="#">
+                            <svg class="icon me-2">
+                                <use xlink:href="static/vendors/@coreui/icons/svg/free.svg#cil-user"></use>
+                            </svg>
+                            Profile</a><a class="dropdown-item" href="#">
+                        <svg class="icon me-2">
+                            <use xlink:href="static/vendors/@coreui/icons/svg/free.svg#cil-settings"></use>
+                        </svg>
+                        Settings</a><a class="dropdown-item" href="#">
+                        <svg class="icon me-2">
+                            <use xlink:href="static/vendors/@coreui/icons/svg/free.svg#cil-credit-card"></use>
+                        </svg>
+                        Payments<span class="badge badge-sm bg-secondary ms-2">42</span></a><a class="dropdown-item"
+                                                                                               href="#">
+                        <svg class="icon me-2">
+                            <use xlink:href="static/vendors/@coreui/icons/svg/free.svg#cil-file"></use>
+                        </svg>
+                        Projects<span class="badge badge-sm bg-primary ms-2">42</span></a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">
+                            <svg class="icon me-2">
+                                <use xlink:href="static/vendors/@coreui/icons/svg/free.svg#cil-lock-locked"></use>
+                            </svg>
+                            Lock Account</a><a class="dropdown-item" href="#">
+                        <svg class="icon me-2">
+                            <use xlink:href="static/vendors/@coreui/icons/svg/free.svg#cil-account-logout"></use>
+                        </svg>
+                        Logout</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="header-divider"></div>
+        <div class="container-fluid">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb my-0 ms-2">
+                    <li class="breadcrumb-item">
+                        <!-- if breadcrumb is single--><a href="#">Home</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <!-- if breadcrumb is single--><a href="#">Components</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <!-- if breadcrumb is single--><a href="#">Forms</a>
+                    </li>
+                    <li class="breadcrumb-item active"><span>Layout</span></li>
+                </ol>
+            </nav>
+        </div>
+    </header>
+    <!--start-->
+    <div class="body flex-grow-1 px-3">
+        <div class="container-lg">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            <strong>New Application</strong>
+                        </div>
+                        <div class="card-body">
+
+                            <div class="example">
+                                <div class="tab-content rounded-bottom">
+                                    <div class="tab-pane p-3 active preview" role="tabpanel" id="preview-635">
+                                        <div class="accordion" id="accordionExample">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingOne">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                            data-coreui-toggle="collapse"
+                                                            data-coreui-target="#collapseOne" aria-expanded="false"
+                                                            aria-controls="collapseOne">1.अर्जातील माहिती
+                                                    </button>
+                                                </h2>
+                                                <div class="accordion-collapse collapse" id="collapseOne"
+                                                     aria-labelledby="headingOne"
+                                                     data-coreui-parent="#accordionExample">
+                                                    <div class="accordion-body">
+
+                                                        <ul>
+                                                            <li>
+                                                                अर्जातील माहिती योग्य व बरोबर असलेबाबत बँकेने अर्जाखाली
+                                                                Verification Certificate दिले आहे काय ?
+                                                                <br>
+                                                                <div class="form-check form-check-inline">
+                                                                    <input class="form-check-input" type="radio"
+                                                                           name="arj_mahiti" id="arj_mahiti_1"
+                                                                           value="option1">
+                                                                    <label class="form-check-label" for="arj_mahiti_1">Yes
+                                                                        / होय</label>
+                                                                </div>
+                                                                <div class="form-check form-check-inline">
+                                                                    <input class="form-check-input" type="radio"
+                                                                           name="arj_mahiti" id="arj_mahiti_2"
+                                                                           value="option2">
+                                                                    <label class="form-check-label" for="arj_mahiti_2">No
+                                                                        / नाही </label>
+
+                                                                </div>
+                                                                <button type="button" id="b2"
+                                                                        class="btn btn-success  text-white  float-end">
+                                                                    Submit
+                                                                </button>
+                                                                <br>
+
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingTwo">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                            data-coreui-toggle="collapse"
+                                                            data-coreui-target="#collapseTwo" aria-expanded="false"
+                                                            aria-controls="collapseTwo">2.कोर्ट फी स्टॅम्प
+                                                    </button>
+                                                </h2>
+                                                <div class="accordion-collapse collapse" id="collapseTwo"
+                                                     aria-labelledby="headingTwo"
+                                                     data-coreui-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <ul>
+                                                            <li>
+                                                                अर्जावर कोर्ट फी स्टॅम्प लावलेला आहे का ?
+                                                                <br>
+                                                                <div class="form-check form-check-inline">
+                                                                    <input class="form-check-input" type="radio"
+                                                                           name="court_stamp" id="court_stamp_1"
+                                                                           value="option1">
+                                                                    <label class="form-check-label" for="court_stamp_1">Yes
+                                                                        / होय</label>
+                                                                </div>
+                                                                <div class="form-check form-check-inline">
+                                                                    <input class="form-check-input" type="radio"
+                                                                           name="court_stamp" id="court_stamp_2"
+                                                                           value="option2">
+                                                                    <label class="form-check-label" for="court_stamp_2">No
+                                                                        / नाही </label>
+                                                                </div>
+
+                                                                <button type="button" id="court_stamp_button"
+                                                                        class="btn btn-success text-white  float-end">
+                                                                    Submit
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingThree">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                            data-coreui-toggle="collapse"
+                                                            data-coreui-target="#collapseThree" aria-expanded="false"
+                                                            aria-controls="collapseThree">3.कर्जदाराची माहिती
+                                                    </button>
+                                                </h2>
+                                                <div class="accordion-collapse collapse" id="collapseThree"
+                                                     aria-labelledby="headingThree"
+                                                     data-coreui-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <ul>
+                                                            <li>
+                                                                कर्जदाराचे संपूर्ण नाव
+                                                                <br>
+                                                                <input type="text" id="karjache_nav" name="karjache_nav"
+                                                                       class="form-control">
+                                                            </li>
+                                                        </ul>
+                                                        <ul>
+                                                            <li>
+                                                                कर्जदाराचे संपूर्ण पत्ता<br>
+                                                                <textarea id="karjache_pata" name="karjache_pata"
+                                                                          rows="4" cols="50"
+                                                                          class="form-control"></textarea>
+                                                            </li>
+                                                        </ul>
+                                                        <ul>
+                                                            <li>
+                                                                कर्जदारास बँकेकडून मंजूर झालेल्या कर्जाची रक्कम<br>
+                                                                <input type="text" id="bankch_manjoor"
+                                                                       name="bankch manjoor"
+                                                                       class="form-control"><br><br>
+                                                            </li>
+                                                            <button type="button" id="karjache_button"
+                                                                    name="karjache_button"
+                                                                    class="btn btn-success text-white  float-end">Submit
+                                                            </button>
+                                                        </ul>
+
+                                                        <br>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingFour">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                            data-coreui-toggle="collapse"
+                                                            data-coreui-target="#collapseFour" aria-expanded="false"
+                                                            aria-controls="collapseFour">4.बँकेचे माहिती
+                                                    </button>
+                                                </h2>
+                                                <div class="accordion-collapse collapse" id="collapseFour"
+                                                     aria-labelledby="headingFour"
+                                                     data-coreui-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <ul>
+                                                            <li>
+                                                                बँकेस तारण दिलेल्या मालमत्तेचा तपशील
+                                                                <input type="file" id="malmata_tapshil_file"
+                                                                       name="malmata_tapshil_file" class="form-control">
+                                                            </li>
+                                                        </ul>
+                                                        <ul>
+                                                            <li>
+                                                                तारण मिळकत कोणाच्या मालकीची आहे.<br>
+                                                                <input type="text" id="taran_milkat" name="taran_milkat"
+                                                                       class="form-control">
+                                                            </li>
+                                                        </ul>
+                                                        <ul>
+                                                            <li>
+                                                                सद्यस्थितीतील 7/12 अथवा सि. स. उतारा सामील करावा<br>
+                                                                <input type="file" id="sat/bara" name="sat/bara"
+                                                                       class="form-control">
+                                                            </li>
+                                                        </ul>
+                                                        <ul>
+                                                            <li>
+                                                                तारण मिळकत शासनाची भाडेपट्ट्याने दिलेली मिळकत आहे काय ?
+                                                                [उदा. MIDC साठी भाडेपट्ट्याने दिलेल्या मिळकती
+                                                                वगैरे].<br>
+                                                                <div class="form-check form-check-inline">
+                                                                    <input class="form-check-input" type="radio"
+                                                                           name="bhadepati" id="bhadepati_1"
+                                                                           value="option1">
+                                                                    <label class="form-check-label" for="bhadepati_1">Yes
+                                                                        / होय</label>
+                                                                </div>
+                                                                <div class="form-check form-check-inline">
+                                                                    <input class="form-check-input" type="radio"
+                                                                           name="bhadepati" id="bhadepati_2"
+                                                                           value="option2">
+                                                                    <label class="form-check-label" for="bhadepati_2">No
+                                                                        / नाही </label><br>
+
+                                                                </div>
+                                                                <button type="button" id="bankche_mahiti_button"
+                                                                        class="btn btn-success text-white  float-end">
+                                                                    Submit
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingFive">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                            data-coreui-toggle="collapse"
+                                                            data-coreui-target="#collapseFive" aria-expanded="false"
+                                                            aria-controls="collapseFive">5.भाडेपट्ट्याची माहिती
+                                                    </button>
+                                                </h2>
+                                                <div class="accordion-collapse collapse" id="collapseFive"
+                                                     aria-labelledby="headingFive"
+                                                     data-coreui-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <ul>
+                                                            <li>
+                                                                मिळकत शासकीय भाडेपट्ट्याची असल्यास त्याबाबत कोणते
+                                                                दस्तऐवज सादर केले आहेत<br>
+                                                                <input type="text" id="shaskiya_bhadepati"
+                                                                       name="shaskiya_bhadepati" class="form-control">
+                                                            </li>
+                                                        </ul>
+                                                        <ul>
+                                                            <li>
+                                                                शासकीय भाडेपट्टयाची मिळकत असल्यास ती तारण देण्यापूर्वी
+                                                                संबंधित विभागाची परवानगी घेतली आहे काय ? असल्यास प्रत
+                                                                जोडावी<br>
+                                                                <div class="form-check form-check-inline">
+                                                                    <input class="form-check-input" type="radio"
+                                                                           name="shaskiya_bhadepati_taran"
+                                                                           id="shaskiya_bhadepati_taran_1"
+                                                                           value="option1">
+                                                                    <label class="form-check-label"
+                                                                           for="shaskiya_bhadepati_taran_1">Yes /
+                                                                        होय</label>
+                                                                </div>
+                                                                <div class="form-check form-check-inline">
+                                                                    <input class="form-check-input" type="radio"
+                                                                           name="shaskiya_bhadepati_taran"
+                                                                           id="shaskiya_bhadepati_taran_2"
+                                                                           value="option2">
+                                                                    <label class="form-check-label"
+                                                                           for="shaskiya_bhadepati_taran_2">No /
+                                                                        नाही </label><br>
+                                                                </div>
+                                                                <input type="file" id="shaskiya_bhadepati_taran_file"
+                                                                       class="form-control" s
+                                                                       style="display: none ;"><br>
+                                                                <button type="button" id="bhadepati_mahiti_button"
+                                                                        name="bhadepati_mahiti_button"
+                                                                        class="btn btn-success text-white  float-end">
+                                                                    Submit
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                        <br>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingSix">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                            data-coreui-toggle="collapse"
+                                                            data-coreui-target="#collapseSix" aria-expanded="false"
+                                                            aria-controls="collapseFive">6.तारण गहाणखत
+                                                    </button>
+                                                </h2>
+                                                <div class="accordion-collapse collapse" id="collapseSix"
+                                                     aria-labelledby="headingSix"
+                                                     data-coreui-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <ul>
+                                                            <li>
+                                                                प्रस्तुत मिळकतीवर तारण गहाण खतानुसार बँकेचा बोजा नोंद
+                                                                करण्यात आलेला आहे अगर कसे ?<br>
+                                                                <div class="form-check form-check-inline">
+                                                                    <input class="form-check-input" type="radio"
+                                                                           name="bankch_bhoj" id="bankch_bhoj_1"
+                                                                           value="option1">
+                                                                    <label class="form-check-label" for="bankch_bhoj_1">Yes
+                                                                        / होय</label>
+                                                                </div>
+                                                                <div class="form-check form-check-inline">
+                                                                    <input class="form-check-input" type="radio"
+                                                                           name="bankch_bhoj" id="bankch_bhoj_2"
+                                                                           value="option2">
+                                                                    <label class="form-check-label" for="bankch_bhoj_2">No
+                                                                        / नाही </label><br>
+                                                                </div>
+                                                                <textarea id="bhoj_nond" name="bhoj_nond" rows="4"
+                                                                          cols="50" class="form-control"
+                                                                          style="display:none ;"></textarea>
+                                                            </li>
+                                                        </ul>
+
+                                                        <ul>
+                                                            <li>
+                                                                तारण गहाणखत नोंदणीकृत आहे काय ? (दि 1-4-2013 पुर्वीचे
+                                                                इक्वीटेबल मॉरगेज असल्यास नोंदणी आवश्यक नाही)<br>
+                                                                <div class="form-check form-check-inline">
+                                                                    <input class="form-check-input" type="radio"
+                                                                           name="mortgage" id="mortgage_1"
+                                                                           value="option1">
+                                                                    <label class="form-check-label" for="mortgage_1">Yes
+                                                                        / होय</label>
+                                                                </div>
+                                                                <div class="form-check form-check-inline">
+                                                                    <input class="form-check-input" type="radio"
+                                                                           name="mortgage" id="mortgage_2"
+                                                                           value="option2">
+                                                                    <label class="form-check-label" for="mortgage_2">No
+                                                                        / नाही </label><br>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+
+                                                        <ul>
+                                                            <li>
+                                                                असल्यास नोंदणी क्रमाक :<br>
+                                                                <input type="text" id="nondne_no" name="nondne_no"
+                                                                       class="form-control">
+                                                            </li>
+                                                        </ul>
+                                                        <ul>
+                                                            <li>
+                                                                दिनांक:<br>
+                                                                <input type="date" id="nondne_date" name="nondne_date"
+                                                                       class="form-control">
+                                                            </li>
+                                                        </ul>
+                                                        <button type="button" id="taran_ghankhat" name="taran_ghankhat"
+                                                                class="btn btn-success text-white  float-end">Submit
+                                                        </button>
+                                                    </div>
+                                                    <br>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingSeven">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                            data-coreui-toggle="collapse"
+                                                            data-coreui-target="#collapseSeven" aria-expanded="false"
+                                                            aria-controls="collapseSeven">7. NPA
+                                                    </button>
+                                                </h2>
+                                                <div class="accordion-collapse collapse" id="collapseSeven"
+                                                     aria-labelledby="headingSeven"
+                                                     data-coreui-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <ul>
+                                                            <li>
+                                                                NPA Certificate ची प्रत सादर केली आहे काय ? <br>
+                                                                <!--radio button-->
+                                                                <div class="form-check form-check-inline">
+                                                                    <input class="form-check-input" type="radio"
+                                                                           name="NPA" id="NPA_1" value="option1">
+                                                                    <label class="form-check-label" for="NPA_1">Yes /
+                                                                        होय</label>
+                                                                </div>
+                                                                <div class="form-check form-check-inline">
+                                                                    <input class="form-check-input" type="radio"
+                                                                           name="NPA" id="NPA_2" value="option2">
+                                                                    <label class="form-check-label" for="NPA_2">No /
+                                                                        नाही </label><br>
+                                                                </div>
+                                                                <br>
+                                                                <label id="l1" style="display:none ;">NPA
+                                                                    Certificate: </label>
+                                                                <input type="file" id="NPA_certificate"
+                                                                       name="NPA_certificate" class="form-control"
+                                                                       style="display:none ;">
+
+                                                            </li>
+                                                        </ul>
+                                                        <ul>
+                                                            <li>
+                                                                तसेच सद्यस्थितीतील अकाऊंट स्टेटमेंट सादर केले आहे काय
+                                                                ?<br>
+                                                                <div class="form-check form-check-inline">
+                                                                    <input class="form-check-input" type="radio"
+                                                                           name="acc_state" id="acc_state_1"
+                                                                           value="option1">
+                                                                    <label class="form-check-label" for="acc_state_1">Yes
+                                                                        / होय</label>
+                                                                </div>
+                                                                <div class="form-check form-check-inline">
+                                                                    <input class="form-check-input" type="radio"
+                                                                           name="acc_state" id="acc_state_2"
+                                                                           value="option2">
+                                                                    <label class="form-check-label" for="acc_state_2">No
+                                                                        / नाही </label><br>
+                                                                </div>
+                                                                <br>
+                                                                <label id="l2" style="display: none;">
+                                                                    अकाऊंट स्टेटमेंट:
+                                                                </label>
+                                                                <input type="file" id="acc_state_file"
+                                                                       name="acc_state_file" class="form-control"
+                                                                       style="display:none ;">
+                                                            </li>
+                                                        </ul>
+                                                        <button type="button" id="NPA_button" name="NPA_button"
+                                                                class="btn btn-success text-white  float-end">Submit
+                                                        </button>
+                                                    </div>
+                                                    <br>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingEight">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                            data-coreui-toggle="collapse"
+                                                            data-coreui-target="#collapseEight" aria-expanded="false"
+                                                            aria-controls="collapseEight">8.थकीत असलेल्या कर्जाची एकूण
+                                                        रक्कम (मुद्दल व व्याज)
+                                                    </button>
+                                                </h2>
+                                                <div class="accordion-collapse collapse" id="collapseEight"
+                                                     aria-labelledby="headingEight"
+                                                     data-coreui-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <ul>
+                                                            <li>
+                                                                थकीत असलेल्या कर्जाची एकूण रक्कम(मुद्दल)<br>
+                                                                <input type="text" id="mudal" name="mudal"
+                                                                       class="form-control">
+                                                            </li>
+                                                            <li>
+                                                                थकीत असलेल्या कर्जाची एकूण रक्कम (व्याज)
+                                                                <input type="text" id="vaj" class="form-control">
+                                                            </li>
+                                                        </ul>
+                                                        <button type="button" id="mudal_vaj_button"
+                                                                class="btn btn-success text-white  float-end">Submit
+                                                        </button>
+                                                    </div>
+                                                    <br>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingNine">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                            data-coreui-toggle="collapse"
+                                                            data-coreui-target="#collapseNine" aria-expanded="false"
+                                                            aria-controls="collapseNine">9. नोटीसची माहिती
+                                                    </button>
+                                                </h2>
+                                                <div class="accordion-collapse collapse" id="collapseNine"
+                                                     aria-labelledby="headingNine"
+                                                     data-coreui-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <ul>
+                                                            <li>
+                                                                सिक्युरिटायझेशन अँड रिकन्स्ट्रक्शन ऑफ फायनान्सीयल असेटस
+                                                                अँड इन्फोर्समेंट ऑफ सिक्युरिटी इंटरेस्ट अॅक्ट 2002 चे
+                                                                कलम 13(2) अन्वये दिलेली नोटीस कोणाकोणाच्या नावे दिली.
+                                                                त्यांची नावे व पत्ते,<br>
+                                                                <div id="newinput"></div>
+
+                                                                <button type="button" id="add_button" name="add_button"
+                                                                        class="btn btn-success bi bi-plus  text-white">+
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+
+                                                        <ul>
+                                                            <li>
+                                                                नोटीस क्रमांक:<br>
+                                                                <input type="text" id="notic_no" name="notic_no"
+                                                                       class="form-control">
+
+                                                            </li>
+                                                        </ul>
+
+                                                        <ul>
+                                                            <li>
+                                                                नोटीस दिनांक:<br>
+                                                                <input type="date" id="notic_date" name="notic_date"
+                                                                       class="form-control">
+                                                            </li>
+                                                        </ul>
+
+                                                        <ul>
+                                                            <li>
+                                                                नोटीस कोणत्या पध्दतीने पाठविली <br>
+                                                                <div class="form-check form-check-inline">
+                                                                    <input class="form-check-input" type="radio"
+                                                                           name="notic_type" id="by_post"
+                                                                           value="option1">
+                                                                    <label class="form-check-label" for="by_post">पोस्टानं</label>
+                                                                </div>
+                                                                <div class="form-check form-check-inline">
+                                                                    <input class="form-check-input" type="radio"
+                                                                           name="notic_type" id="by_rpad"
+                                                                           value="option2">
+                                                                    <label class="form-check-label"
+                                                                           for="by_rpad">RPAD</label><br>
+                                                                </div>
+
+                                                                <div class="form-check form-check-inline">
+                                                                    <input class="form-check-input" type="radio"
+                                                                           name="notic_type" id="by_courier"
+                                                                           value="option1">
+                                                                    <label class="form-check-label" for="by_courier">कुरीअर</label>
+                                                                </div>
+                                                                <div class="form-check form-check-inline">
+                                                                    <input class="form-check-input" type="radio"
+                                                                           name="notic_type" id="by_other"
+                                                                           value="option2">
+                                                                    <label class="form-check-label"
+                                                                           for="by_other">इतर</label><br>
+                                                                </div>
+                                                                <input type="text" id="etc_notic" name="etc_notic"
+                                                                       class="form-control" style="display: none ;">
+
+                                                            </li>
+                                                        </ul>
+
+                                                        <ul>
+                                                            <li>
+                                                                नोटीस कोणत्या तारखेस पोहच केली ती तारीख :<br>
+                                                                <input type="date" id="paper_date" name="paper_date"
+                                                                       class="form-control">
+
+                                                            </li>
+                                                        </ul>
+
+                                                        <ul>
+                                                            <li>
+                                                                नोटीसची पेपर प्रसिध्दी कोणत्या स्थानिक वृत्तपत्रामध्ये
+                                                                दिली आहे<br>
+                                                                <select class="form-select"
+                                                                        onchange="DoSomethingOnChange(this)">
+                                                                    <option selected>वर्तमानपत्र निवडा</option>
+                                                                    <option value="1">लोकमत</option>
+                                                                    <option value="2">दिव्या मराठी</option>
+                                                                    <option value="3">संचार</option>
+                                                                    <option value="4">सकाळ</option>
+                                                                    <option id="5" value="5">इतर</option>
+                                                                </select>
+                                                                <br><label id="paper_lable" style="display:none ;">वर्तमानपत्र
+                                                                नाव</label><br><input type="text" id="paper_text"
+                                                                                      name="paper_text"
+                                                                                      class="form-control"
+                                                                                      style="display: none;">
+                                                            </li>
+                                                        </ul>
+
+                                                        <ul>
+                                                            <li>
+                                                                पेपर प्रसिध्दीचा दिनांक:<br>
+                                                                <input type="date" id="pub_date" name="pub_date"
+                                                                       class="form-control">
+                                                            </li>
+                                                        </ul>
+
+                                                        <ul>
+                                                            <li>
+                                                                पेपर पुरावा<br>
+                                                                <input type="file" id="paper_proof" name="paper_proof"
+                                                                       class="form-control">
+
+                                                            </li>
+                                                        </ul>
+                                                        <button type="button" id="notic_button" name="notic_button"
+                                                                class="btn btn-success text-white  float-end">Submit
+                                                        </button>
+                                                    </div>
+                                                    <br><br>
+                                                </div>
+                                            </div>
+
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingTen">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                            data-coreui-toggle="collapse"
+                                                            data-coreui-target="#collapseTen" aria-expanded="false"
+                                                            aria-controls="collapseTen">10.लेखी खुलासा
+                                                    </button>
+                                                </h2>
+                                                <div class="accordion-collapse collapse" id="collapseTen"
+                                                     aria-labelledby="headingTen"
+                                                     data-coreui-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <ul>
+                                                            <li>
+                                                                कलम 13 (331) नुसार कर्जदाराने लेखी खुलासा अगर हरकत
+                                                                उपस्थित केली होती का ?<br>
+                                                                <div class="form-check form-check-inline">
+                                                                    <input class="form-check-input" type="radio"
+                                                                           name="kalam_13" id="kalam_13_1"
+                                                                           value="option1">
+                                                                    <label class="form-check-label" for="kalam_13_1">Yes
+                                                                        / होय</label>
+                                                                </div>
+                                                                <div class="form-check form-check-inline">
+                                                                    <input class="form-check-input" type="radio"
+                                                                           name="kalam_13" id="kalam_13_2"
+                                                                           value="option2">
+                                                                    <label class="form-check-label" for="kalam_13_2">No
+                                                                        / नाही </label><br>
+
+                                                                </div>
+
+                                                            </li>
+                                                        </ul>
+                                                        <button type="button" id="lekhe_button" name="lekhe_button"
+                                                                class="btn btn-success text-white  float-end">Submit
+                                                        </button>
+                                                    </div>
+                                                    <br>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingEleven">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                            data-coreui-toggle="collapse"
+                                                            data-coreui-target="#collapseEleven" aria-expanded="false"
+                                                            aria-controls="collapseEleven">11.हरकत मंजुरी
+                                                    </button>
+                                                </h2>
+                                                <div class="accordion-collapse collapse" id="collapseEleven"
+                                                     aria-labelledby="headingEleven"
+                                                     data-coreui-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <ul>
+                                                            <li>
+                                                                कर्जदाराचा खुलासा / हरकत मंजूर होण्यास पात्र नसल्यास
+                                                                खुलासा हरकत दाखल झाल्यापासून नामंजूर होण्याच्या कारणांसह
+                                                                15 दिवसांमध्ये कर्जदारास तसे कळविण्यात आले आहे का,
+                                                                असल्यास त्याची पोहोच<br>
+                                                                <div class="form-check form-check-inline">
+                                                                    <input class="form-check-input" type="radio"
+                                                                           name="harkhat_manjoori"
+                                                                           id="harkhat_manjoori_1" value="option1">
+                                                                    <label class="form-check-label"
+                                                                           for="harkhat_manjoori_1">Yes / होय</label>
+                                                                </div>
+                                                                <div class="form-check form-check-inline">
+                                                                    <input class="form-check-input" type="radio"
+                                                                           name="harkhat_manjoori"
+                                                                           id="harkhat_manjoori_2" value="option2">
+                                                                    <label class="form-check-label"
+                                                                           for="harkhat_manjoori_2">No /
+                                                                        नाही </label><br>
+                                                                </div>
+                                                                <input type="file" id="harkhat_manjoori_file"
+                                                                       name="harkhat_manjoori_file" class="form-control"
+                                                                       style="display:none ;">
+                                                            </li>
+                                                        </ul>
+                                                        <button type="button" id="harkhat_manjoori_button"
+                                                                class="btn btn-success text-white  float-end">Submit
+                                                        </button>
+                                                    </div>
+                                                    <br>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingTwelve">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                            data-coreui-toggle="collapse"
+                                                            data-coreui-target="#collapseTwelve" aria-expanded="false"
+                                                            aria-controls="collapseTwelve">12. नोटीस मधील मिळकत व तारण
+                                                        मिळकत एकच आहे काय ?
+                                                    </button>
+                                                </h2>
+                                                <div class="accordion-collapse collapse" id="collapseTwelve"
+                                                     aria-labelledby="headingTwelve"
+                                                     data-coreui-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <ul>
+                                                            <li>
+                                                                नोटीस मधील मिळकत व तारण मिळकत एकच आहे काय ?<br>
+                                                                <div class="form-check form-check-inline">
+                                                                    <input class="form-check-input" type="radio"
+                                                                           name="notic_taran" id="notic_taran_1"
+                                                                           value="option1">
+                                                                    <label class="form-check-label" for="notic_taran_1">Yes
+                                                                        / होय</label>
+                                                                </div>
+                                                                <div class="form-check form-check-inline">
+                                                                    <input class="form-check-input" type="radio"
+                                                                           name="notic_taran" id="notic_taran_2"
+                                                                           value="option2">
+                                                                    <label class="form-check-label" for="notic_taran_2">No
+                                                                        / नाही </label><br>
+                                                                </div>
+                                                                <button type="button" id="notic_naran_button"
+                                                                        class="btn btn-success text-white  float-end">
+                                                                    Submit
+                                                                </button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingThirteen">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                            data-coreui-toggle="collapse"
+                                                            data-coreui-target="#collapseThirteen" aria-expanded="false"
+                                                            aria-controls="collapseThirteen">13.अर्जदार बँकेने खालील
+                                                        बाबी नमूद असलेले प्रतिज्ञापत्र सादर केले आहे काय ?
+                                                    </button>
+                                                </h2>
+                                                <div class="accordion-collapse collapse" id="collapseThirteen"
+                                                     aria-labelledby="headingThirteen"
+                                                     data-coreui-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <ul>
+                                                            <li>
+                                                                कलम 13(2) ची नोटीस कर्जदारास सह कर्जदार, जामिनदार त तारण
+                                                                गहाणदारास रितसर पोहोच केली आहे.
+                                                        </ul>
+                                                        <ul>
+                                                            <li>
+                                                                सदर कर्ज प्रकरणाबाबत तसेच तारण मिळकतीबाबत कोणत्याही
+                                                                न्यायालयात अगर प्राधिकरणासमोर दावा दाखल नसून वाद तोह नही
+                                                                किंवा कोणतंही स्थगिती आदेश नाहीत.
+                                                            </li>
+                                                        </ul>
+                                                        <ul>
+                                                            <li>
+                                                                तारण मिळकत सिक्युरिटायझेशन अॅड रिकन्स्ट्रक्शन ऑफ
+                                                                फायनान्सीयल असेटस अँड इन्फोर्समेंट ऑफ सिक्युरिटी
+                                                                इंटरेस्ट अॅक्ट 2002 चे कलम 31 अंतर्गत समाविष्ट होत नाही
+                                                            </li>
+                                                        </ul>
+                                                        <ul>
+                                                            <li>
+                                                                तारण शिळकत तारण गहाणदार यांचेशिवाय जम्प कोणाच्या ताब्यात
+                                                                नाही. / भाडेकरार अथवा अन्य स्वरुपाने मिळकत तारण गहाणदार
+                                                                यांचे शिवाय अन्य इसमाचे ताब्यात असल्यास त्याबाबतचा
+                                                                तपशिल.
+                                                            </li>
+                                                        </ul>
+                                                        <ul>
+                                                            <li>
+                                                                प्रतिज्ञापत्र नोटरी / सेतू कार्यालयात सक्षम प्राधिकारी
+                                                                यांचे समोर केलेले असावे.
+                                                                <br>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="radio" name="rules"
+                                                                   id="rules_1" value="option1">
+                                                            <label class="form-check-label" for="rules_1">Yes /
+                                                                होय</label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="radio" name="rules"
+                                                                   id="rules_2" value="option2">
+                                                            <label class="form-check-label" for="rules_2">No /
+                                                                नाही </label><br>
+                                                        </div>
+                                                        <button type="button" id="Rules_button" name="Rules_name"
+                                                                class="btn btn-success text-white  float-end">Submit
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- CoreUI and necessary plugins-->
+<script src="static/vendors/@coreui/coreui/js/coreui.bundle.min.js"></script>
+<script src="static/vendors/simplebar/js/simplebar.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#form_allotment").submit(function(event){
+            event.preventDefault();
+            $.ajax({
+                method:"POST",
+                url:"save-kendrapramukh",
+                data:$("#form_allotment").serialize()
+            }).done(function(data){
+                alert(data.message)
+            });
+        });
+    });
+
+
+</script>
+</body>
+</html>
