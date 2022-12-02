@@ -49,6 +49,7 @@
           gtag('config', 'UA-118965717-5');
 
 
+
     </script>
 
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css">
@@ -89,8 +90,10 @@
             History</a>
             <ul class="nav-group-items">
                 <li class="nav-item"><a class="nav-link" href="exams"><span class="nav-icon"></span> Pending</a></li>
-                <li class="nav-item"><a class="nav-link" href="new-allotment"><span class="nav-icon"></span> Approved</a></li>
-                <li class="nav-item"><a class="nav-link" href="exam-allotments"><span class="nav-icon"></span> Rejected</a></li>
+                <li class="nav-item"><a class="nav-link" href="new-allotment"><span class="nav-icon"></span>
+                    Approved</a></li>
+                <li class="nav-item"><a class="nav-link" href="exam-allotments"><span class="nav-icon"></span> Rejected</a>
+                </li>
                 <!--            <li class="nav-item"><a class="nav-link" href="base/cards.html"><span class="nav-icon"></span> Cards</a></li>-->
             </ul>
         </li>
@@ -252,7 +255,7 @@
                         </div>
                         <div class="card-body">
 
-                            <div >
+                            <div>
                                 <table class="table table-bordered table-striped" id="myTable">
                                     <thead>
 
@@ -270,13 +273,15 @@
                                     <tr>
 
                                         <td>1</td>
-                                        <td>शाखा व्यवस्थापक, सुवर्णयुग सहकारी बँक लि. पुणे चे प्राधिकृत अधिकारी श्री. नगरकर नीलकंठ पद्माकर</td>
+                                        <td>शाखा व्यवस्थापक, सुवर्णयुग सहकारी बँक लि. पुणे चे प्राधिकृत अधिकारी श्री.
+                                            नगरकर नीलकंठ पद्माकर
+                                        </td>
                                         <td class="pt-3-half">19-05-2021</td>
                                         <td class="pt-3-half">Ongoing</td>
                                         <td class="pt-3-half">
-                                            <button type="button" id="button1" class="btn btn-success  text-white">
+                                            <a href="application-details" class="btn btn-primary btn-sm">
                                                 View
-                                            </button>
+                                            </a>
                                         </td>
 
                                         <span class="table-up"
@@ -293,12 +298,15 @@
 
                                     <tr>
                                         <td>2</td>
-                                        <td>लक्ष्मी  सहकारी बँक लि.चे शाखा व्यवस्थापक, मुंबई चे  अधिकृत अधिकारी श्री. विठ्ठल नामदेव पवार</td>
+                                        <td>लक्ष्मी सहकारी बँक लि.चे शाखा व्यवस्थापक, मुंबई चे अधिकृत अधिकारी श्री.
+                                            विठ्ठल नामदेव पवार
+                                        </td>
                                         <td class="pt-3-half">8-5-2022</td>
                                         <td class="pt-3-half">Completed</td>
                                         <td class="pt-3-half">
-                                            <button type="button" id="button2" class="btn btn-success text-white">View
-                                            </button>
+                                            <a href="application-details" class="btn btn-primary btn-sm">
+                                                View
+                                            </a>
                                         </td>
                                         <span class="table-up"
                                         ><a href="#!" class="indigo-text"
@@ -314,12 +322,13 @@
 
                                     <tr>
                                         <td>3</td>
-                                        <td>बँक ऑफ इंडिया शाखा व्यवस्थापक, सोलापूर चे  अधिकृत अधिकारी</td>
+                                        <td>बँक ऑफ इंडिया शाखा व्यवस्थापक, सोलापूर चे अधिकृत अधिकारी</td>
                                         <td class="pt-3-half">9-8-2001</td>
                                         <td class="pt-3-half">Pending</td>
                                         <td class="pt-3-half">
-                                            <button type="button" id="button3" class="btn btn-success text-white">View
-                                            </button>
+                                            <a href="application-details" class="btn btn-primary btn-sm">
+                                                View
+                                            </a>
                                         </td>
 
                                         <span class="table-up"
@@ -335,12 +344,13 @@
                                     </tr>
                                     <tr class="hide">
                                         <td>4</td>
-                                        <td>मनोरमा   सहकारी बँक लि.चे शाखा व्यवस्थापक, सोलापूर चे  अधिकृत अधिकारी</td>
+                                        <td>मनोरमा सहकारी बँक लि.चे शाखा व्यवस्थापक, सोलापूर चे अधिकृत अधिकारी</td>
                                         <td class="pt-3-half"> 8-12-2021</td>
                                         <td class="pt-3-half">Ongoing</td>
                                         <td class="pt-3-half">
-                                            <button type="button" id="button4" class="btn btn-success text-white">View
-                                            </button>
+                                            <a href="application-details" class="btn btn-primary btn-sm">
+                                                View
+                                            </a>
                                         </td>
 
                                         <span class="table-up"
@@ -374,6 +384,7 @@
     $(document).ready(function(){
         $('#myTable').DataTable();
     });
+
 
 
 

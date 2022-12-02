@@ -23,5 +23,10 @@ def view_application():
     return render_template("view-application.html")
 
 
+@app.route("/application-details")
+def application_details():
+    return render_template("application-details.html")
+
+
 if __name__ == '__main__':
     app.run(debug=True)
